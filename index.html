@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Photograper</title>
+
+    <meta name="description"
+        content="Creative Photographer specializing in portraits, landscapes, and fine art photography. Capturing stunning visuals with precision and artistic vision.">
+    <meta name="author" content="BDM JP">
+    <meta name="keywords"
+        content="Photography, Portrait Photography, Landscape Photography, Fine Art Photography, Outdoor Photography, Professional Photographer, Gallery Prints, Photo Studio, Creative Photographer, Photo Sessions">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Creative Photographer | Portraits, Landscapes & Fine Art Photography">
+    <meta property="og:description"
+        content="Expert photographer delivering professional portraits, landscapes, and fine art images with creativity and precision.">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:site_name" content="Creative Photographer">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Creative Photographer | Portraits, Landscapes & Fine Art Photography">
+    <meta name="twitter:description"
+        content="Expert photographer delivering professional portraits, landscapes, and fine art images with creativity and precision.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/twitter-image.jpg">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- UPDATED: OCT 31 2025
+     AUTHOR: BDM JP
+-->
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B6B" />
+                            <stop offset="100%" style="stop-color:#7FFFD4" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" opacity="0.1" />
+                    <path d="M20 60 L35 40 L50 55 L65 35 L80 50" stroke="url(#logoGradient)" stroke-width="4"
+                        fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="35" cy="40" r="3" fill="url(#logoGradient)" />
+                    <circle cx="50" cy="55" r="3" fill="url(#logoGradient)" />
+                    <circle cx="65" cy="35" r="3" fill="url(#logoGradient)" />
+                    <rect x="25" y="65" width="50" height="15" rx="7" fill="url(#logoGradient)" opacity="0.3" />
+                </svg>
+                <span class="logo-text">Creative Photograper</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero">
+        <div class="slider-container">
+            <div class="progress-ring">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="slider-stage" id="sliderStage"></div>
+
+            <div class="text-overlay" id="textOverlay">
+                <h2 class="slide-title" id="slideTitle">Mountain Peak</h2>
+                <p class="slide-description" id="slideDescription">City lights whisper through darkness—
+                    dreams reflected on the water,
+                    a skyline breathing in silver silence.</p>
+            </div>
+
+            <button class="nav-arrow prev" id="prevArrow" aria-label="Previous"></button>
+            <button class="nav-arrow next" id="nextArrow" aria-label="Next"></button>
+
+            <div class="controls">
+                <button class="control-btn play-pause-btn" id="playPauseBtn" title="Play/Pause">
+                    <span class="play-icon"></span>
+                    <span class="pause-icon"></span>
+                </button>
+            </div>
+
+            <div class="dots" id="dots"></div>
+            <div class="thumbnails-container" id="thumbnails"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">Advanced photography solutions combining creative vision, technical
+                    precision, and expertise across portrait, landscape, and product imagery.</p>
+            </div>
+
+            <div class="services-container">
+                <div class="services-tabs">
+                    <div class="service-tab active" data-service="photography">
+                        <span class="service-tab-icon">📸</span>
+                        <h3>Portrait Photography</h3>
+                        <p>Emotionally engaging and memorable images</p>
+                    </div>
+
+                    <div class="service-tab" data-service="expeditions">
+                        <span class="service-tab-icon">🏔️</span>
+                        <h3>Open-Air Shots</h3>
+                        <p>Capturing images in natural, outdoor settings</p>
+                    </div>
+
+                    <div class="service-tab" data-service="prints">
+                        <span class="service-tab-icon">🎨</span>
+                        <h3>Gallery-Quality Prints</h3>
+                        <p>Suitable for galleries or exhibitions</p>
+                    </div>
+                </div>
+
+                <div class="services-content">
+                    <div class="service-content active" id="photography">
+                        <div class="service-content-icon">📸</div>
+                        <h2>Portraits </h2>
+                        <p>Portrait photography focuses on capturing the essence, personality, and emotion of a person
+                            or group. It often emphasizes expression, lighting, and composition to tell a story through
+                            a subject’s face and body language. Whether in a studio or natural setting, portrait
+                            photographers use creative techniques to highlight individuality and connection.</p>
+
+
+                    </div>
+
+                    <div class="service-content" id="expeditions">
+                        <div class="service-content-icon">🏔️</div>
+                        <h2>Outdoor & Nature</h2>
+                        <p>Outdoor and nature photography captures the beauty of the natural world, using landscapes,
+                            wildlife, and natural light to tell stories. It emphasizes authenticity, atmosphere, and
+                            connection, turning everyday environments into striking, memorable images.</p>
+
+                    </div>
+
+                    <div class="service-content" id="prints">
+                        <div class="service-content-icon">🎨</div>
+                        <h2>Museum-Grade Fine Art Prints</h2>
+                        <p>Museum-quality photography refers to images produced with the highest standards of clarity,
+                            color accuracy, and archival materials. These prints are durable, collectible, and crafted
+                            to meet professional exhibition standards, ensuring lasting beauty and artistic value.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Creative Photographer</h2>
+                <p class="section-subtitle">Highlighting a career devoted to creating striking portraits, captivating
+                    landscapes, and fine art images with creativity, technical precision, and artistic vision.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2010</div>
+                        <div class="timeline-title">Early Portrait Work</div>
+                        <div class="timeline-description">Started professional portrait photography, focusing on studio
+                            lighting and natural expressions. Developed foundational techniques in composition and color
+                            management.</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2014</div>
+                        <div class="timeline-title">Landscape Photography Expansion</div>
+                        <div class="timeline-description">Expanded into landscape and nature photography. Completed
+                            multiple expeditions capturing diverse environments, emphasizing light, atmosphere, and
+                            storytelling through imagery.</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2018</div>
+                        <div class="timeline-title">Gallery Exhibitions</div>
+                        <div class="timeline-description">Featured in local and national galleries. Work included fine
+                            art prints and limited editions, recognized for composition, technical mastery, and
+                            emotional impact.</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-title">Commercial and Product Photography</div>
+                        <div class="timeline-description">Expanded into commercial and product photography, delivering
+                            high-quality imagery for clients, marketing campaigns, and e-commerce platforms.</div>
+                    </div>
+                </div>
+
+                <div class="about-tech">
+                    <div class="tech-card">
+                        <div class="tech-icon">📸</div>
+                        <div class="tech-title">Modern Photography Methods</div>
+                        <div class="tech-description">I use high-resolution DSLRs, mirrorless, and medium-format cameras
+                            to capture images with detail, dynamic range, and color accuracy, giving me precise control
+                            over composition, lighting, and focus for portraits, landscapes, and commercial shoots.
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon">🎨</div>
+                        <div class="tech-title">Adept at Post-Processing</div>
+                        <div class="tech-description">I expertly use post-processing tools like Lightroom and Photoshop
+                            to enhance images, adjusting color, contrast, and exposure. My workflow refines portraits,
+                            landscapes, and commercial shots, ensuring every photograph reflects precise detail, mood,
+                            and the artist’s creative vision.</div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon">🌄</div>
+                        <div class="tech-title">Outdoor & Location Expertise</div>
+                        <div class="tech-description">I specialize in on-location photography across diverse
+                            environments, skillfully managing natural lighting, unpredictable weather, and logistical
+                            challenges to capture striking, high-quality images. My approach ensures each shoot delivers
+                            professional, visually compelling results regardless of conditions.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-futuristic">
+                <div class="stat-futuristic">
+                    <h4>80+</h4>
+                    <p>Portrait Sessions</p>
+                </div>
+                <div class="stat-futuristic">
+                    <h4>107</h4>
+                    <p>Landscapes Captured</p>
+                </div>
+                <div class="stat-futuristic">
+                    <h4>12</h4>
+                    <p>Gallery Exhibitions</p>
+                </div>
+                <div class="stat-futuristic">
+                    <h4>100%</h4>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Picture This</h2>
+                <p class="section-subtitle">Ready to schedule your next photography session or commission a custom
+                    project? I’d love to collaborate and bring your creative vision to life with stunning, professional
+                    images.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form">
+                    <p style="color: #ff0000; margin-bottom: .5rem;">Apologies, the form is currently unavailable.</p>
+
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell us about your project or adventure plans..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Studio Location</h4>
+                            <p>2 Cranberry Square<br>Byram, NJ 07821</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>(973) 349-6522</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p>contact@ByramDigitalMedia.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 9:00 PM<br>Weekend by appointment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FF6B6B" />
+                                    <stop offset="100%" style="stop-color:#7FFFD4" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="45" fill="url(#footerLogoGradient)" opacity="0.1" />
+                            <path d="M20 60 L35 40 L50 55 L65 35 L80 50" stroke="url(#footerLogoGradient)"
+                                stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="35" cy="40" r="3" fill="url(#footerLogoGradient)" />
+                            <circle cx="50" cy="55" r="3" fill="url(#footerLogoGradient)" />
+                            <circle cx="65" cy="35" r="3" fill="url(#footerLogoGradient)" />
+                            <rect x="25" y="65" width="50" height="15" rx="7" fill="url(#footerLogoGradient)"
+                                opacity="0.3" />
+                        </svg>
+                        <span class="footer-logo-text">Thanks For Visiting</span>
+                    </div>
+                    <p class="footer-description">Thank you for visiting! We appreciate your interest in our work, from
+                        breathtaking alpine landscapes to carefully crafted fine art prints. Your support allows us to
+                        continue capturing and sharing the extraordinary beauty of nature.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Portrait</a>
+                        <a href="#" class="footer-link">Open-Air</a>
+                        <a href="#" class="footer-link">Gallery Quality</a>
+
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="#header" class="footer-link">Home</a>
+                        <a href="#services" class="footer-link">Services</a>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Shipping Info</a>
+                        <a href="#" class="footer-link">Returns</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    Copyright © <span id="year"></span> Creative Photographer
+                </div>
+                <div class="footer-credits">
+
+                    Designed by <a href="https://byramdigitalmedia.com" target="_blank" rel="noopener nofollow">BDM</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
