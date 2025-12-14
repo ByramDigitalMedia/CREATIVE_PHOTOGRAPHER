@@ -15,7 +15,7 @@ AUTHOR: BDM JP
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #000;
   overflow-x: hidden;
 }
 
@@ -91,7 +91,7 @@ html {
 }
 
 .nav-menu a {
-  color: #555;
+  color: #000;
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 600;
@@ -130,7 +130,7 @@ html {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: #555;
+  background: #000;
   margin: 3px 0;
   transition: 0.3s;
   border-radius: 2px;
@@ -632,7 +632,7 @@ html {
 
 .section-subtitle {
   font-size: 20px;
-  color: #666;
+  color: #000;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -728,7 +728,7 @@ html {
 
 .service-tab p {
   font-size: 14px;
-  color: #666;
+  color: #000;
   margin: 0;
   line-height: 1.4;
 }
@@ -801,7 +801,7 @@ html {
 
 .service-content p {
   font-size: 18px;
-  color: #666;
+  color: #000;
   line-height: 1.8;
   margin-bottom: 25px;
 }
@@ -815,7 +815,7 @@ html {
   padding: 10px 0;
   padding-left: 30px;
   position: relative;
-  color: #555;
+  color: #000;
   font-size: 16px;
 }
 
@@ -1058,7 +1058,7 @@ html {
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  color: #333;
+  color: #000;
   font-weight: 600;
   font-size: 16px;
 }
@@ -1165,13 +1165,13 @@ html {
 .contact-details h4 {
   font-size: 20px;
   margin-bottom: 8px;
-  color: #333;
+  color: #000;
   font-weight: 600;
 }
 
 .contact-details p {
   font-size: 16px;
-  color: #666;
+  color: #000;
   margin: 0;
   line-height: 1.6;
 }
