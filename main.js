@@ -37,7 +37,7 @@ class VerticalCubeSlider {
       {
         url: "images/image-04.jpg",
         thumb: "images/thumb-04.jpg",
-        title: "Ocean Waves",
+        title: "Keeping Time",
         description: "A still world, a silent keeper. Time's slow, heavy tick, marking moments forever past."
       },
       {
